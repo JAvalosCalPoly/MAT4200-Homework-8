@@ -4,6 +4,7 @@
 \usepackage{xcolor}
 \usepackage{graphicx, float}
 \usepackage[hybrid]{markdown}
+\usepackage{comment}
 
 \renewcommand{\qedsymbol}{\(\blacksquare\)}
 \newtheorem{proposition}{Proposition}
@@ -33,5 +34,33 @@ Tools and resources used:
   \item Difficulty: 2/10.
   \item Questions/Feedback: None.
 \end{itemize}
+
+\pagebreak
+\section*{Exercise 3}
+\begin{itemize}
+  \item Points attempted: 10
+  \item Self-assessed score: 10/10.
+  \item Time spent: 70 minutes.
+  \item Difficulty: 5/10.
+  \item Questions/Feedback: None.
+\end{itemize}
+\begin{comment}
+Recall that the first fundamental form \(       \mathrm{I} \colon T_pM \times T_pM \to \mathbb{R}     \) is defined intrinsically as the map \[       \mathrm{I}(a \mathbf{r}_u(p) + b \mathbf{r}_v(p), c \mathbf{r}_u(p) + d \mathbf{r}_v(p)) = acE + (ad+bc)F + bdG,     \] where \[       \begin{align*}         E = \langle \mathbf{r}_u, \mathbf{r}_u \rangle, \quad         F = \langle \mathbf{r}_u, \mathbf{r}_v \rangle, \quad         G = \langle \mathbf{r}_v, \mathbf{r}_v \rangle.       \end{align*}     \]
+We typically write this as \[       \mathrm{I} = E du^2 + 2F du\, dv + G dv^2     \] or in the matrix notation (with respect to the basis \(\{ \mathbf{r}_u, \mathbf{r}_v \} \)) \[       \mathrm{I}(\mathbf{w}_1,\mathbf{w}_2) = \langle \mathbf{w}_1,\mathbf{w}_2 \rangle = \mathbf{w}_1^T \begin{pmatrix}       E & F \\ F & G \end{pmatrix} \mathbf{w}_2.     \]
+
+
+Now the second fundamental form \[       \mathrm{I\!I} \colon T_pM \times T_pM \to \mathbb{R}     \] is defined extrinsically with respect to the Gauss map \(       \mathbf{N} \colon M \to S^2     \) and its differential \( d\mathbf{N}_p \colon T_pM \to T_{\mathbf{N}(p)}(S^2) \), namely: \[       \mathrm{I\!I}(\mathbf{w}_1,\mathbf{w}_2) = \langle -d\mathbf{N}_p(\mathbf{w}_1), \mathbf{w}_2 \rangle = \langle P(\mathbf{w}_1), \mathbf{w}_2 \rangle.     \]
+Here, \( P = -d\mathbf{N}_p \) is called the shape operator.1
+
+
+We will prove that with respect to the basis \(\{ \mathbf{r}_u, \mathbf{r}_v \} \), \[       \mathrm{I\!I}(\mathbf{w}_1,\mathbf{w}_2) = \mathbf{w}_1^T \begin{pmatrix} L & M \\ M & N\end{pmatrix} \mathbf{w}_2,     \] where \[       L = -\mathbf{r}_{uu} \cdot \mathbf{N}, \quad       M = -\mathbf{r}_{uv} \cdot \mathbf{N}, \quad       N = -\mathbf{r}_{vv} \cdot \mathbf{N}.     \]
+(Here, \( M \) is a real number, and is different from our surface \( M \).)
+
+
+Lastly, we will use the first and second fundamental forms (which are easy to compute) to determine the Gaussian and mean curvatures at every point on our surface.
+\end{comment}
+\begin{enumerate}
+  \item 
+\end{enumerate}
 
 \end{document}
