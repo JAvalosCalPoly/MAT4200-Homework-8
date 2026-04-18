@@ -60,7 +60,34 @@ We will prove that with respect to the basis \(\{ \mathbf{r}_u, \mathbf{r}_v \} 
 Lastly, we will use the first and second fundamental forms (which are easy to compute) to determine the Gaussian and mean curvatures at every point on our surface.
 \end{comment}
 \begin{enumerate}
-  \item 
+  \item The phrase \(\langle \mathbf{r}_u, \mathbf{N} \rangle = 0\)
+        because the unit Normal vector
+        is perpendicular to the tangent plane.
+
+  \item The partial derivatives of the inner product
+        with respect to \(u\) is zero, so we have
+        \[
+          \frac{\partial}{\partial u} \langle \mathbf{r}_u, \mathbf{N} \rangle = \langle \mathbf{r}_{uu}, \mathbf{N} \rangle + \langle \mathbf{r}_u, \mathbf{N}_u \rangle = 0.
+        \]
+        Since the shape operator is \(P = -d\mathbf{N}_p \), we have
+        \[
+          \langle \mathbf{r}_{uu}, \mathbf{N} \rangle + \langle \mathbf{r}_u, \mathbf{N}_u \rangle = \langle \mathbf{r}_{uu}, \mathbf{N} \rangle + \langle \mathbf{r}_u, P(\mathbf{r}_u) \rangle = 0.
+        \]
+        Therefore, we obtain \( \langle \mathbf{N},  \mathbf{r}_{uu} \rangle = \langle P(\mathbf{r}_{u}), \mathbf{r}_{u} \rangle \).
+
+  \item %Extend this idea to prove that with respect to the basis \(\{ \mathbf{r}_u, \mathbf{r}_v \} \), \[         \langle P(\mathbf{w}_1), \mathbf{w}_2 \rangle = \mathbf{w}_1^T \begin{pmatrix} L & M \\ M & N\end{pmatrix} \mathbf{w}_2.       \] Now we want to recover the eigenvalues of the shape operator \( P \). Recall that our inner product is precisely \( \mathrm{I} \), and thus \[         \langle P(\mathbf{w}_1), \mathbf{w}_2 \rangle = P(\mathbf{w}_1)^T \begin{pmatrix} E & F \\ F & G \end{pmatrix} \mathbf{w}_2.       \] Use this to prove that \[         P(\mathbf{w}_1) = \begin{pmatrix} E & F \\ F & G \end{pmatrix}^{-1}\begin{pmatrix} L & M \\ M & N\end{pmatrix} \mathbf{w}_1.       \]
+        Let \(L = \langle \mathbf{N}, \mathbf{r}_{uu} \rangle\), \(M = \langle \mathbf{N}, \mathbf{r}_{uv} \rangle\), and \(N = \langle \mathbf{N}, \mathbf{r}_{vv} \rangle\) 
+        also let \(w_1=a\mathbf{r}_u + b\mathbf{r}_v\) and \(w_2=c\mathbf{r}_u + d\mathbf{r}_v\). Then we have
+        therefore, 
+        \[
+        \langle P(\mathbf{w}_1), \mathbf{w}_2 \rangle = \langle P(a\mathbf{r}_u + b\mathbf{r}_v), c\mathbf{r}_u + d\mathbf{r}_v \rangle = acL + (ad+bc)M + bdN.
+        \]
+        Since as matrixs, \(\mathbf{w}_1 = (a,b)\) and \(\mathbf{w}_2 = (c,d)\), we have
+        \[
+        \langle P(\mathbf{w}_1), \mathbf{w}_2 \rangle = \mathbf{w}_1^T \begin{pmatrix} L & M \\ M & N\end{pmatrix} \mathbf{w}_2.
+        \]
+
+  
 \end{enumerate}
 
 \end{document}
