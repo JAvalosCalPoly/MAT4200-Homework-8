@@ -76,18 +76,92 @@ Lastly, we will use the first and second fundamental forms (which are easy to co
         Therefore, we obtain \( \langle \mathbf{N},  \mathbf{r}_{uu} \rangle = \langle P(\mathbf{r}_{u}), \mathbf{r}_{u} \rangle \).
 
   \item %Extend this idea to prove that with respect to the basis \(\{ \mathbf{r}_u, \mathbf{r}_v \} \), \[         \langle P(\mathbf{w}_1), \mathbf{w}_2 \rangle = \mathbf{w}_1^T \begin{pmatrix} L & M \\ M & N\end{pmatrix} \mathbf{w}_2.       \] Now we want to recover the eigenvalues of the shape operator \( P \). Recall that our inner product is precisely \( \mathrm{I} \), and thus \[         \langle P(\mathbf{w}_1), \mathbf{w}_2 \rangle = P(\mathbf{w}_1)^T \begin{pmatrix} E & F \\ F & G \end{pmatrix} \mathbf{w}_2.       \] Use this to prove that \[         P(\mathbf{w}_1) = \begin{pmatrix} E & F \\ F & G \end{pmatrix}^{-1}\begin{pmatrix} L & M \\ M & N\end{pmatrix} \mathbf{w}_1.       \]
-        Let \(L = \langle \mathbf{N}, \mathbf{r}_{uu} \rangle\), \(M = \langle \mathbf{N}, \mathbf{r}_{uv} \rangle\), and \(N = \langle \mathbf{N}, \mathbf{r}_{vv} \rangle\) 
+        Let \(L = \langle \mathbf{N}, \mathbf{r}_{uu} \rangle\), \(M = \langle \mathbf{N}, \mathbf{r}_{uv} \rangle\), and \(N = \langle \mathbf{N}, \mathbf{r}_{vv} \rangle\)
         also let \(w_1=a\mathbf{r}_u + b\mathbf{r}_v\) and \(w_2=c\mathbf{r}_u + d\mathbf{r}_v\). Then we have
-        therefore, 
+        therefore,
         \[
-        \langle P(\mathbf{w}_1), \mathbf{w}_2 \rangle = \langle P(a\mathbf{r}_u + b\mathbf{r}_v), c\mathbf{r}_u + d\mathbf{r}_v \rangle = acL + (ad+bc)M + bdN.
+          \langle P(\mathbf{w}_1), \mathbf{w}_2 \rangle = \langle P(a\mathbf{r}_u + b\mathbf{r}_v), c\mathbf{r}_u + d\mathbf{r}_v \rangle = acL + (ad+bc)M + bdN.
         \]
         Since as matrixs, \(\mathbf{w}_1 = (a,b)\) and \(\mathbf{w}_2 = (c,d)\), we have
         \[
-        \langle P(\mathbf{w}_1), \mathbf{w}_2 \rangle = \mathbf{w}_1^T \begin{pmatrix} L & M \\ M & N\end{pmatrix} \mathbf{w}_2.
+          \langle P(\mathbf{w}_1), \mathbf{w}_2 \rangle = \mathbf{w}_1^T \begin{pmatrix} L & M \\ M & N\end{pmatrix} \mathbf{w}_2.
+        \]
+  \item Since \(I = \begin{pmatrix}
+          E & F \\ F & G
+        \end{pmatrix}\) and we know that \(
+        \langle P(\mathbf{w}_1), \mathbf{w}_2 \rangle = P(\mathbf{w}_1)^T I \mathbf{w}_2\),  and earlier
+        we showed that \(\langle P(\mathbf{w}_1), \mathbf{w}_2 \rangle = \mathbf{w}_1^T \begin{pmatrix} L & M \\ M & N\end{pmatrix} \mathbf{w}_2\), we have
+        \[
+          P(\mathbf{w}_1)^T I \mathbf{w}_2 = \mathbf{w}_1^T \begin{pmatrix} L & M \\ M & N\end{pmatrix} \mathbf{w}_2.
+        \]
+        We can divide by \(\mathbf{w}_2\) on both sides and then transpose to get
+        \[
+          I P(\mathbf{w}_1) = \begin{pmatrix} L & M \\ M & N\end{pmatrix} \mathbf{w}_1.
+        \]
+        Since \(I\) is invertible, we have that
+        \[
+          P(\mathbf{w}_1) = I^{-1} \begin{pmatrix} L & M \\ M & N\end{pmatrix} \mathbf{w}_1.
         \]
 
-  
+  \item By definition, the Gaussian curvature \(K\) is the determinant of the shape operator \(P\), We can use the fact that before we showed how \(P = I^{-1}\begin{pmatrix} L & M \\ M & N\end{pmatrix}\) so that
+        \[
+          K = \det(P) = \det\left(I^{-1}\begin{pmatrix} L & M \\ M & N\end{pmatrix}\right) = \det(I^{-1})\det\left(\begin{pmatrix} L & M \\ M & N\end{pmatrix}\right).
+        \]
+        The determinant of \(I^{-1}\) is the reciprocal of the determinant of \(I\), and \(\det(I) = EG-F^2\), and the determinant of \(\begin{pmatrix} L & M \\ M & N\end{pmatrix}\) is \(LN-M^2\), so we have that
+        \[
+          K = \frac{LN-M^2}{EG-F^2}.
+        \]
+
+  \item By definition, the mean curvature \(H\) is half the trace of the shape operator \(P\), so we have
+        \(
+        H = \frac{1}{2} \operatorname{tr}(P).
+        \)
+        The function \(P\) written out all the way is
+        \[
+          P = \frac{1}{EG-F^2}\begin{pmatrix} G & -F \\ -F & E \end{pmatrix}\begin{pmatrix} L & M \\ M & N\end{pmatrix}.
+        \]
+        The trace of \(P\) is
+        \[
+          \operatorname{tr}(P) = \frac{1}{EG-F^2} (GL - 2FM + EN).
+        \]
+        Therefore,
+        \[
+          H = \frac{GL - 2FM + EN}{2(EG-F^2)}.
+        \]
+
+  \item Given the function \[         \mathbf{r}(u,v) = \begin{pmatrix} u \\ v \\ uv\end{pmatrix},\quad (u,v) \in (-1,1) \times (-1, 1),       \]
+        at the point \(p = \mathbf{r}(0,0)\) has the following partial derivatives:
+        \[
+          \mathbf{r}_u = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix},\quad
+          \mathbf{r}_v = \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix},\quad
+          \mathbf{r}_{uu} = \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix},\quad
+          \mathbf{r}_{uv} = \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix},\quad
+          \mathbf{r}_{vv} = \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}.
+        \]
+        The first fundamental coefficients are
+        \[
+          E = \langle \mathbf{r}_u, \mathbf{r}_u \rangle = 1, \quad
+          F = \langle \mathbf{r}_u, \mathbf{r}_v \rangle = 0, \quad
+          G = \langle \mathbf{r}_v, \mathbf{r}_v \rangle = 1.
+        \]
+        The unit normal vector is
+        \[
+        \mathbf{N} = \frac{\mathbf{r}_u \times \mathbf{r}_v}{\|\mathbf{r}_u \times \mathbf{r}_v\|} = \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}.
+        \]
+        The second fundamental coefficients are
+        \[
+          L = \langle \mathbf{N}, \mathbf{r}_{uu} \rangle = 0, \quad
+          M = \langle \mathbf{N}, \mathbf{r}_{uv} \rangle = 1, \quad
+          N = \langle \mathbf{N}, \mathbf{r}_{vv} \rangle = 0.
+        \]
+        Therefore, the first and second fundamental forms are
+        \[
+          \mathrm{I} = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}, \quad
+          \mathrm{I\!I} = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}.
+        \]
+        The shape operator is \(P = \mathrm{I}^{-1}\mathrm{I\!I}=\begin{pmatrix}
+          0 & 1 \\ 1 & 0
+        \end{pmatrix}\) which we can get the eigenvalues of by solving the characteristic polynomial \(\lambda^2 - 1 = 0\) to get \(\lambda = \pm 1\). Therefore, the Gaussian curvature is \(K = \kappa_1\kappa_2 = -1\) and the mean curvature is \(H = \frac{1}{2} (\kappa_1 + \kappa_2) = 0\).
 \end{enumerate}
 
 \end{document}
