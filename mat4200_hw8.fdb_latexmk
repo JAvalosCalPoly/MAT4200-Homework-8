@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1776653072.96627 "c:/Users/jonay/OneDrive - Cal Poly Pomona/MAT4200/MAT4200-Homework-8/mat4200_hw8.tex" "mat4200_hw8.pdf" "mat4200_hw8" 1776653074.85539 0
+["pdflatex"] 1776653261.12985 "c:/Users/jonay/OneDrive - Cal Poly Pomona/MAT4200/MAT4200-Homework-8/mat4200_hw8.tex" "mat4200_hw8.pdf" "mat4200_hw8" 1776653263.30854 0
   "C:/Users/jonay/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1776490113 161609 ed5f950be6671ee0fff6dd76bd8a8f6e ""
   "C:/Users/jonay/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1773965038 14064 740da7a672f0cc2ab4cb0800573d0a70 ""
   "C:/Users/jonay/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1769908482 13333862 70b4f4040fe7513c7ad5f737e0299838 ""
@@ -113,11 +113,11 @@
   "C:/Users/jonay/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/jonay/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "_markdown_mat4200_hw8/dec2d89ab341c6012c03efdfa79f59b1.md.tex" 1776652811 4931 8d4b0246352ba2f9d7bf4c7f0e96fe88 ""
-  "c:/Users/jonay/OneDrive - Cal Poly Pomona/MAT4200/MAT4200-Homework-8/mat4200_hw8.tex" 1776653072 10447 b3e8cacdb36fee3b9e5db4425be8e51c ""
+  "c:/Users/jonay/OneDrive - Cal Poly Pomona/MAT4200/MAT4200-Homework-8/mat4200_hw8.tex" 1776653260 10378 20d2de2e806e0409b719c3bfe5b936d8 ""
   "markdown/blog_post.md" 1776652152 3701 73b24eb8ec066bffbf9fcc13f4889a00 ""
-  "mat4200_hw8.aux" 1776653074 537 6aa42ea75fa506b9184c1fd2ef2d6b29 "pdflatex"
-  "mat4200_hw8.out" 1776653074 432 b95f23439fc6c14fb0131334f3aefa33 "pdflatex"
-  "mat4200_hw8.tex" 1776653072 10447 b3e8cacdb36fee3b9e5db4425be8e51c ""
+  "mat4200_hw8.aux" 1776653263 537 6aa42ea75fa506b9184c1fd2ef2d6b29 "pdflatex"
+  "mat4200_hw8.out" 1776653263 432 b95f23439fc6c14fb0131334f3aefa33 "pdflatex"
+  "mat4200_hw8.tex" 1776653260 10378 20d2de2e806e0409b719c3bfe5b936d8 ""
   (generated)
   "mat4200_hw8.aux"
   "mat4200_hw8.log"
