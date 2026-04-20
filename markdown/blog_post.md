@@ -1,0 +1,29 @@
+
+## The Basic Pasta Parameters
+
+Each parametric for each pasta is defined in terms of two arbitrary variables, $i$ and $j$. These variables' range varies and may not agree with each other. For example, *Cappelletti* has them ranging from $0$ to $40$ for $i$ and $0$ to $120$ for $j$. It is also important to note that different pastas actually use one or the other set to either $1$ or $0$ when generating their shapes.
+
+What really differentiates the different shapes in their actual parametric equations. They are pretty much self explanitory, the equation denoted $\Pi$ is used for the length of the noodle, $\Theta$ is the width of the noodle, and $K$ is the depth. Each of these equations takes in $i$ and $j$ and outputs the view of the cross-section at that specific point. Many pastas describe these as trig functions $\sin$ and $\cos$ and so they also have a period, 
+
+In the rest of this whole section, we will see how changing the initial $i$ and $j$ inputs for these cross-sections can change our pasta as well as how we can change the phase of the pasta equations change their shapes.
+
+## Pasta in Detail
+
+Each pasta is governed by two inputs, $i$ and $j$. These inputs define out shape by acting as coordinates in a $2\text{D}$ space. The range of these variables tell us where a pasta begins and where it ends when we graph them using the actual parametric equation, especially since we won't neccesarily be using all the values of one variable when constructing certain parts of the pasta. Throughout our reading, we will be manipulating the length, width, and depth equations, these equations take in a pair $(i,j)$ and output a single value. The length and width equation $\Pi$ and $\Theta$ and graphed to form cross-sections and other shapes vital to the pasta. Other more complex pasta shapes involve using the height $K$ to generate complicated shapes. So, when we get a point $(i,j)$ and we plug them into our equations we get a single point for our pasta, and when we run through every possible combination we get our yummy pasta noodle. In a way, $i$ and $j$ are "sliders" for our pasta equations and the actual parametric equations are our coordinates.
+
+## Simple pastas
+
+One can't imagine a pasta more simple than *acini di pepe* which is just a ring. This shape is good for us to understand how the parameters govern it on a simple level. The inputs are $i = 0 \text{ to } 120$ and $j = 0 \text{ to } 30$ and uses $\sin$ and $\cos$ functions to form the ring shape, $\Pi_{i,j}=15\cos\left(\frac{i}{60}\pi\right)$ and $\Theta_{i,j}=15\sin\left(\frac{i}{60}\pi\right)$. 
+
+<div style="text-align: center;">
+  <img src="images/acini_reg.png" alt="Regular acini di pepe" width="200">
+</div>
+
+For the actual shape, $i$ is fixed and $j$ is varied to create a circle, then $j$ is changed using $K$ to extruded the shape. To see how these things can affect the shape, lets lower the amplitude of $\Pi$, for visual purposes the amplitude of $\Theta$ will be raised. This gives us an oval shape. If we wanted to make it look like it got ran through the washing machine, mulitplying $\sin$ waves gives us a bobbing look almost like a star. If instead we wanted to vary the radius of our acini, we can either choose to vary it every $j$ or $i$, every $i$ resolves to a spiral and every $j$ leaves acini looking like a cone.
+
+<div style="text-align: center;">
+  <img src="images/acini_oval.png" alt="Oval acini di pepe" width="150">
+  <img src="images/acini_wavy.png" alt="Oval acini di pepe" width="215">
+  <img src="images/acini_spiral.png" alt="Oval acini di pepe" width="177">
+  <img src="images/acini_cone.png" alt="Oval acini di pepe" width="276">
+</div>
