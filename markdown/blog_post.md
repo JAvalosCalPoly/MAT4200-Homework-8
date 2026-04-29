@@ -42,3 +42,6 @@ The height $K$ is also different, being a $\cos$ function of $j$ instead of bein
 <div style = "text-align: center;">
   <img src="images/conch_height_map.png" alt="Conchiglie Rigate's height" width="">
 </div>  
+<div style = "text-align: center;">
+  <img src="images/conchiglie.gif" alt="Conchiglie Rigate in motion" width="200">
+</div>  
