@@ -27,3 +27,18 @@ For the actual shape, $i$ is fixed and $j$ is varied to create a circle, then $j
   <img src="images/acini_spiral.png" alt="Oval acini di pepe" width="177">
   <img src="images/acini_cone.png" alt="Oval acini di pepe" width="276">
 </div>
+
+To summarize, we can control the pasta shape in a 2D setting by manipulating the inputs to the parametric equations that define the shape. We can also change some conditions of the equations such as radius to get more shapes.
+
+### A Not so simple pasta: *Conchiglie Rigate*
+
+Although messing with a really simple pasta shape like Acini is all good, the sea of pasta shapes a vast one and includes some unique ones as well. I say sea of pasta shapes because this is looks like a sea shell. Conchiglie Rigate is one such pasta that demonstrates the complexity and beauty of parametric shapes in pasta design. While the cross section of Acini is just a constant circle, Conchiglie Rigate has a cross section that changes with $j$.
+<div style = "text-align: center;">
+  <img src="images/acini_cross_section.png" alt="Acini's cross section" width="186">
+  <img src="images/conch_cross_section.png" alt="Conchiglie Rigate's cross section" width="100">
+</div>
+
+The height $K$ is also different, being a $\cos$ function of $j$ instead of being constant.
+<div style = "text-align: center;">
+  <img src="images/conch_height_map.png" alt="Conchiglie Rigate's height" width="">
+</div>  
