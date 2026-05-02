@@ -1,4 +1,13 @@
-
+---
+title: Pasta Design and Family
+author: Jonathan Avalos
+date: 2026-05-01
+type: blog
+courseNumber: MAT4200
+term: S26
+layout: layouts/blog.njk
+---
+# Pasta Design and Family
 ## The Basic Pasta Parameters
 
 Each parametric for each pasta is defined in terms of two arbitrary variables, $i$ and $j$. These variables' range varies and may not agree with each other. For example, *Cappelletti* has them ranging from $0$ to $40$ for $i$ and $0$ to $120$ for $j$. It is also important to note that different pastas actually use one or the other set to either $1$ or $0$ when generating their shapes.
