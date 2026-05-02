@@ -40,8 +40,23 @@ Although messing with a really simple pasta shape like Acini is all good, the se
 
 The height $K$ is also different, being a $\cos$ function of $j$ instead of being constant.
 <div style = "text-align: center;">
-  <img src="images/conch_height_map.png" alt="Conchiglie Rigate's height" width="">
+  <img src="images/conch_height_map.png" alt="Conchiglie Rigate's height" width="400">
 </div>  
+
 <div style = "text-align: center;">
   <img src="images/conchiglie.gif" alt="Conchiglie Rigate in motion" width="200">
 </div>  
+
+### Pasta Groups
+
+These pasta characteristics, their shape and form, can be used to form groups of pasta from which we can draw conclusions on their function, cooking time, and generally the shapes on pastas we do not know. For example, Acini di pepe is in a family that in Legendre's book is described as straight, solid, smooth-smooth, basically simple spherical pstas and is related to pastas like linguini and spaghetti. If you have these pastas you can see how their cross sections are all simple circles, only differing in size. The next most related famliy to these pastas is one that includes lasagna, mafaldine, and tropoline, which are all also straight and solid but have a more flat cross section with optional ruffles at the ends. It is sort of easy to see how these two groups are related since we can simply take the circle of the first group and flatten it to get the second group, however they are separate groups because of the rufflesm and the difference in size, transitioning from one group to the other is not as simple as changing a parameter, it is more of a change in the actual equations that govern the pasta and so the end shape becomes distorted and not as yummy looking.
+
+<div style = "text-align: center;">
+  <img src="images/pasta_3D_loop.gif" alt="Lasagna group" width="400">
+</div>
+
+The gif shown is of acini di pepe being transformed into mafaldine, and as you can see, the final shape is not as good as an actual mafaldine. Additionally, for pastas really distantly related one would have to stretch and distort the shape either by compramising on the final shape or by changing the equations in a way that is not just changing inputs but rather the actual equations. Pasta does not go into itself and actual pasta dough may not be able to stretch small shapes into big ones and vice versa, so the final shape may not be as good as an actual pasta.
+
+## Conclusion
+
+In conclusion, the world of pasta is a vast and often overlooked one, but it one that is just as full of complexity and shape beauty as any other field of design. The parameters that govern the shape of pasta are not just arbitrary numbers, but rather they are the building blocks that create the unique and delicious shapes we all know and love. By understanding these parameters and how they interact with each other, we can gain a deeper appreciation for the art and science of pasta making, and perhaps even inspire us to create our own unique pasta shapes in the future.
